@@ -21,15 +21,12 @@ namespace DemoAPI.Filters
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
-            // Check if the action has parameters
             var hasParameters = context.ActionDescriptor.Parameters.Any();
 
             logger.LogInformation($"Action {context.ActionDescriptor.DisplayName} has parameters: {hasParameters}");
 
-            // Only validate if parameters are expected
             if (hasParameters)
             {
-                // Check if all action arguments are null
                 if (!context.ActionArguments.Any() || context.ActionArguments.All(arg => arg.Value == null))
                 {
                     context.Result = new BadRequestObjectResult(new
