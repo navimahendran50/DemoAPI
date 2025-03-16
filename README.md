@@ -34,16 +34,29 @@ Installation & Setup:-
   4. dotnet run
 
 Testing Endpoint:-
-Request
+Request:
 GET /api/customers
 Headers:
-  bankCode: 1850
+  bankCode: 27
+
+Response:
+{
+    "statusCode": 200,
+    "message": "Success",
+    "data": [
+        {
+            "id": "736a6965-a2c1-4ed2-92de-648364b02314",
+            "name": "Mahendran Chinnasamy"
+        },
+        {
+            "id": "ec090b99-4df4-4875-abf0-0b1885d80d4f",
+            "name": "Harshad Mahinder"
+        }
+    ]
+}
+
+Future Enhancement:
+The above CUSTOMER endpoint request is only a sample test for connecting dynamic databases. The actual requirement of this demo project is to generate different types of reports for various banks and schedule cron jobs for automation, as well as enable manual report generation based on incoming requests.
 
 Conclusion:-
-  This implementation ensures dynamic database selection per request while maintaining a separate default database for Identity authentication.
-
-  
-
-
-
-  
+  This implementation ensures dynamic database selection per request while maintaining a separate default database for Identity authentication. 
