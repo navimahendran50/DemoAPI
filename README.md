@@ -28,7 +28,7 @@ Migration commands:-
   5. dotnet ef database update -c BankDbContext --connection "Data Source=Bank27DB.sqlite"
 
 Installation & Setup:-
-  1. Clone the repository git clone https://github.com/navimahendran50/DemoAPI.git
+  1. Clone the repository: git clone https://github.com/navimahendran50/DemoAPI.git
   2. cd DemoAPI
   3. dotnet build
   4. dotnet run
