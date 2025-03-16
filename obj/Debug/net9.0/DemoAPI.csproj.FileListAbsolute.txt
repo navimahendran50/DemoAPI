@@ -167,3 +167,4 @@ D:\NAVEEN\Visual Studio 2022 Projects\Learn\DemoAPI\obj\Debug\net9.0\refint\Demo
 D:\NAVEEN\Visual Studio 2022 Projects\Learn\DemoAPI\obj\Debug\net9.0\DemoAPI.pdb
 D:\NAVEEN\Visual Studio 2022 Projects\Learn\DemoAPI\obj\Debug\net9.0\DemoAPI.genruntimeconfig.cache
 D:\NAVEEN\Visual Studio 2022 Projects\Learn\DemoAPI\obj\Debug\net9.0\ref\DemoAPI.dll
+D:\NAVEEN\Visual Studio 2022 Projects\Learn\DemoAPI\obj\Debug\net9.0\DemoAPI.sourcelink.json

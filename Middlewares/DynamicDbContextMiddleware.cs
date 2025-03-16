@@ -29,14 +29,12 @@ namespace DemoAPI.Middlewares
             string? connectionString = null;
             string requestPath = context.Request.Path.Value ?? string.Empty;
 
-            // Use DefaultConnection only for Identity-related routes
             if (requestPath.StartsWith("/api/account", StringComparison.OrdinalIgnoreCase))
             {
                 connectionString = configuration.GetConnectionString("DefaultConnection");
             }
             else
             {
-                // Validate the presence of bankCode
                 if (context.Request.Headers.TryGetValue("bankCode", out var bankCode))
                 {
                     logger.LogInformation("Bank Code: {0}", bankCode!);
