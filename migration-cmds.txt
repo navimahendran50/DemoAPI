@@ -1,0 +1,11 @@
+dotnet ef migrations add CreateIdentityTables -c AppDbContext
+dotnet ef database update -c AppDbContext
+
+dotnet ef migrations add CreateCustomerTable -c BankDbContext 
+dotnet ef database update -c BankDbContext --connection "Data Source=Bank1664DB.sqlite"
+
+dotnet ef database update -c BankDbContext --connection "Data Source=Bank27DB.sqlite"
+
+
+
+

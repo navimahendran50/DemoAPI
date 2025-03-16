@@ -1,0 +1,46 @@
+2025-03-09 12:13:54.880 +05:30 [INF] Now listening on: http://localhost:5268
+2025-03-09 12:13:54.944 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-09 12:13:54.945 +05:30 [INF] Hosting environment: Development
+2025-03-09 12:13:54.945 +05:30 [INF] Content root path: D:\NAVEEN\Visual Studio 2022 Projects\Learn\DemoAPI
+2025-03-09 12:17:33.564 +05:30 [INF] Application is shutting down...
+2025-03-09 12:18:13.042 +05:30 [INF] Now listening on: http://localhost:5268
+2025-03-09 12:18:13.088 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-09 12:18:13.088 +05:30 [INF] Hosting environment: Development
+2025-03-09 12:18:13.088 +05:30 [INF] Content root path: D:\NAVEEN\Visual Studio 2022 Projects\Learn\DemoAPI
+2025-03-09 12:19:53.000 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5268/api/student/create - application/json 37
+2025-03-09 12:19:53.022 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-03-09 12:19:53.025 +05:30 [INF] Executing endpoint 'DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI)'
+2025-03-09 12:19:53.057 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateStudent(DemoAPI.Dtos.CreateStudentDto, System.Threading.CancellationToken) on controller DemoAPI.Controllers.StudentController (DemoAPI).
+2025-03-09 12:19:53.359 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-09 12:19:53.407 +05:30 [INF] Executed action DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI) in 345.3312ms
+2025-03-09 12:19:53.418 +05:30 [INF] Executed endpoint 'DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI)'
+2025-03-09 12:19:53.427 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5268/api/student/create - 400 null application/problem+json; charset=utf-8 431.4988ms
+2025-03-09 12:21:29.033 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5268/api/student/create - application/json 72
+2025-03-09 12:21:29.039 +05:30 [INF] Executing endpoint 'DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI)'
+2025-03-09 12:21:29.040 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateStudent(DemoAPI.Dtos.CreateStudentDto, System.Threading.CancellationToken) on controller DemoAPI.Controllers.StudentController (DemoAPI).
+2025-03-09 12:21:29.044 +05:30 [INF] Action DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI) has parameters: True
+2025-03-09 12:21:30.276 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 25), @p2='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Students" ("Id", "Email", "Name")
+VALUES (@p0, @p1, @p2);
+2025-03-09 12:21:30.296 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoAPI.Models.Student'.
+2025-03-09 12:21:30.302 +05:30 [INF] Executed action DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI) in 1262.435ms
+2025-03-09 12:21:30.302 +05:30 [INF] Executed endpoint 'DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI)'
+2025-03-09 12:21:30.312 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5268/api/student/create - 200 null application/json; charset=utf-8 1280.021ms
+2025-03-09 12:22:27.814 +05:30 [INF] Application is shutting down...
+2025-03-09 12:23:10.684 +05:30 [INF] Now listening on: http://localhost:5268
+2025-03-09 12:23:10.775 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-09 12:23:10.776 +05:30 [INF] Hosting environment: Development
+2025-03-09 12:23:10.776 +05:30 [INF] Content root path: D:\NAVEEN\Visual Studio 2022 Projects\Learn\DemoAPI
+2025-03-09 12:23:28.760 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5268/api/student/create - application/json 72
+2025-03-09 12:23:28.791 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-03-09 12:23:28.794 +05:30 [INF] Executing endpoint 'DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI)'
+2025-03-09 12:23:28.828 +05:30 [INF] Route matched with {action = "CreateStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateStudent(DemoAPI.Dtos.CreateStudentDto, System.Threading.CancellationToken) on controller DemoAPI.Controllers.StudentController (DemoAPI).
+2025-03-09 12:23:29.101 +05:30 [INF] Action DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI) has parameters: True
+2025-03-09 12:23:30.211 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 25), @p2='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Students" ("Id", "Email", "Name")
+VALUES (@p0, @p1, @p2);
+2025-03-09 12:23:30.234 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoAPI.Models.Student'.
+2025-03-09 12:23:30.271 +05:30 [INF] Executed action DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI) in 1437.1474ms
+2025-03-09 12:23:30.276 +05:30 [INF] Executed endpoint 'DemoAPI.Controllers.StudentController.CreateStudent (DemoAPI)'
+2025-03-09 12:23:30.295 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5268/api/student/create - 200 null application/json; charset=utf-8 1538.9617ms
+2025-03-09 12:23:53.412 +05:30 [INF] Application is shutting down...
