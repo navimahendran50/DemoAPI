@@ -11,5 +11,6 @@ namespace DemoAPI.Data
     {
         public BankDbContext(DbContextOptions<BankDbContext> options) : base(options) {}
         public virtual DbSet<Customer> Customers { get; set; } = default!;
+        public virtual DbSet<Voucher> Vouchers { get; set; } = default!;
     }
 }

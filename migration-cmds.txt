@@ -6,6 +6,7 @@ dotnet ef database update -c BankDbContext --connection "Data Source=Bank1664DB.
 
 dotnet ef database update -c BankDbContext --connection "Data Source=Bank27DB.sqlite"
 
-
+dotnet ef migrations add CreateVoucherTable -c BankDbContext
+--update
 
 
